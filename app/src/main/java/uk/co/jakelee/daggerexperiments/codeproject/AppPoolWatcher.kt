@@ -1,13 +1,13 @@
 package uk.co.jakelee.daggerexperiments.codeproject
 
 class AppPoolWatcher {
-    // Handle to EventLog writer to write to the logs
-    var writer: EventLogWriter? = null
+
+    var action: INotificationAction? = null
 
     fun Notify(message: String) {
-        if (writer == null) {
-            writer = EventLogWriter()
+        if (action == null) {
+            // Here we will map the abstraction i.e. interface to concrete class
         }
-        writer!!.Write(message)
+        action!!.ActOnNotification(message)
     }
 }
