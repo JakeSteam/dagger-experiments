@@ -24,8 +24,8 @@ class BaeldungTests {
         Assert.assertNotNull(carTwo.brand)
 
         // Non-singleton objects are different, singleton objects are the same
-        Assert.assertNotEquals(carOne.url, carTwo.url)
-        Assert.assertNotEquals(carOne.engine, carTwo.engine)
+        Assert.assertEquals(carOne.url, carTwo.url)
         Assert.assertEquals(carOne.brand, carTwo.brand)
+        Assert.assertNotEquals(carOne.engine, carTwo.engine)
     }
 }
