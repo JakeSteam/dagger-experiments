@@ -3,14 +3,9 @@ package uk.co.jakelee.daggerexperiments.dzone;
 import javax.inject.Inject;
 
 public class Body {
-    @Inject
+    @Inject // Tells dagger the body has blood, which can be injected (literally...)
     Blood blood;
+
     @Inject
     public Body(){}
-    public Blood getBlood() {
-        return blood;
-    }
-    public void setBlood(Blood blood) {
-        this.blood = blood;
-    }
 }

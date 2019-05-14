@@ -12,7 +12,7 @@ public class RandomInjectionModule {
 
     public RandomInjectionModule() { }
 
-    @Provides
+    @Provides // Tells dagger this function provides the `Blood`
     static Blood provideBlood(){
         if(blood != null) {
             return blood;
