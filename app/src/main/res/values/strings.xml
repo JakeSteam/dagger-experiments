@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Dagger Experiments</string>
+    <string name="title_activity_pro_android_dev">ProAndroidDevActivity</string>
 </resources>
