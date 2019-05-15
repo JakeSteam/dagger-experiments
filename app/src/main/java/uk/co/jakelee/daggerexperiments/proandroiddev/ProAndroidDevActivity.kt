@@ -18,6 +18,6 @@ class ProAndroidDevActivity : AppCompatActivity() {
         (application as MyApplication)
             .myComponent!!
             .inject(this@ProAndroidDevActivity)
-        tvDate.text = Date(myExample!!.getDate()).toString()
+        tvDate.text = Date(myExample!!.getDate()).toGMTString()
     }
 }

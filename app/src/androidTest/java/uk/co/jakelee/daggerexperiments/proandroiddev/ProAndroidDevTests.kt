@@ -38,6 +38,6 @@ open class ProAndroidDevTests {
 
     @Test
     fun formattedDateShown() {
-        onView(withId(R.id.tvDate)).check(matches(withText("Wed Dec 31 19:00:00 EST 1969")))
+        onView(withId(R.id.tvDate)).check(matches(withText("1 Jan 1970 00:00:00 GMT")))
     }
 }
