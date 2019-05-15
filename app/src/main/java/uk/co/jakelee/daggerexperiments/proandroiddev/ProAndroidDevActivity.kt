@@ -9,8 +9,8 @@ import javax.inject.Inject
 
 class ProAndroidDevActivity : AppCompatActivity() {
 
-    @Inject
-    var mMyExample: MyExample? = null
+    @set:Inject
+    var myExample: MyExample? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +18,6 @@ class ProAndroidDevActivity : AppCompatActivity() {
         (application as MyApplication)
             .myComponent!!
             .inject(this@ProAndroidDevActivity)
-        tvDate.text = Date(mMyExample!!.getDate()).toString()
+        tvDate.text = Date(myExample!!.getDate()).toString()
     }
 }
