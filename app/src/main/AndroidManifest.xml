@@ -20,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".elyeproject.MainActivity"/>
+        <activity android:name=".elyeproject.ElyeProjectActivity"/>
     </application>
 
 </manifest>
