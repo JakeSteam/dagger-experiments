@@ -8,7 +8,6 @@ import dagger.Provides
 import kotlinx.android.synthetic.main.activity_elye_project.*
 import uk.co.jakelee.daggerexperiments.R
 import javax.inject.Inject
-import javax.inject.Named
 import javax.inject.Qualifier
 
 const val LOVE = "Love"
@@ -28,15 +27,15 @@ class ElyeProjectActivity : AppCompatActivity() {
 }
 
 @Module
-class Bag {
+open class Bag {
     @Provides
-    @Named(LOVE)
+    @Choose(LOVE)
     open fun sayLoveDagger2(): Info {
         return Info("Love Dagger 2")
     }
 
     @Provides
-    @Named(HELLO)
+    @Choose(HELLO)
     open fun sayHelloDagger2(): Info {
         return Info("Hello Dagger 2")
     }
