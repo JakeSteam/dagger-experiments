@@ -19,11 +19,9 @@ class ElyeProjectActivity : AppCompatActivity() {
     }
 }
 
-class Info @Inject constructor() {
-    val text = "Hello Dagger 2"
-}
+class Info(val text: String)
 
-@Component
+@Component(modules = [Bag::class])
 interface MagicBox {
     fun poke(app: ElyeProjectActivity)
 }
