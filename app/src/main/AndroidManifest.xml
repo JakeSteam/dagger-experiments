@@ -22,6 +22,7 @@
         </activity>
         <activity android:name=".elyeproject.ElyeProjectActivity"/>
         <activity android:name=".elyeproject.ElyeProjectScopeActivity"/>
+        <activity android:name=".elyeproject.ElyeProjectSubcomponentActivity"/>
     </application>
 
 </manifest>
